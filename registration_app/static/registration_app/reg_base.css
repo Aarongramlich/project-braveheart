@@ -1,0 +1,102 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+li{
+	font: black;
+}
+
+
+#brand{
+	color: #333333;
+	font-weight: bold;
+
+}
+
+/*.home-exp{
+	padding: 20px;
+}
+*/
+#home_banner{
+	font-style: #2699FB;
+}
+
+form{
+	width:350px;
+	padding: 20px;
+	/*border: 1px solid white;*/
+	align-content: auto;
+}
+
+#stepone-leftpanel{
+	background-color: #ffffff;
+}
+
+.steptwo-table{
+	border: 2px solid black;
+	margin: 25px;
+	/*align:center;*/
+	text-align: left;		
+}
+
+.steptwo-td{
+	border: 2px solid black;
+	tex-align: left;
+	align:left;
+}
+#tier1header{
+	font: 1.4em blue solid bold;
+	/*border: 2px black;*/
+}
+
+#tier2header{
+	font: 1.4em blue solid bold;
+	border: 2px black;
+}
+
+.nav-item{
+	margin:.5em;
+}
+
+#tier3header{
+	font: 1.4em blue solid;
+	border: 2px black;
+}
+
+/*th{
+	font: 2em;
+	background: blue solid;
+}
+*/
+.jumbotron{
+	background: white;
+	/*border-color: #403D58;
+	border-radius: 2px;
+	border-width: 20px;
+	border-style:solid;*/
+}
+
+#bundle_header{
+	margin: 10px;
+	color: black;
+	/*font-style: italic;*/
+	/*font-weight: bold;*/
+	font-family: Ariel Bold;
+	/*font-family: 'Montserrat', sans-serif;*/
+}
+
+/*.features{
+	list-style:none;
+}*/
+
+.btn{
+	width: 250px;
+	margin-top: 2em;
+	/*background-color: #2176AE;
+	border-color: #2176AE*/
+
+}
+
+.hero-panel{
+	font-style: white 1.2em;
+}

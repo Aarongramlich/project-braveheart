@@ -1,0 +1,45 @@
+{% extends 'registration_app/registration_app_base.html' %}
+
+{% block body_block %}
+<div class="jumbotron">
+	<div class="container" align="center">
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<!-- <input type="submit" class="btn btn-primary" name="Submit" value="Next"> -->
+	</form>
+	<div id="bundle_header">
+		<h3>which bundle best fits your needs?</h3>
+	</div>
+	<table class="steptwo-table">
+		<tr align="center">
+			<th id='tier1header' width="200px">Tier 1</th>
+			<th id='tier2header' width="200px">Tier 2</th>
+			<th id='tier3header' width="200px">Tier 3</th>
+		</tr>
+		<tr class="features" >
+			<td class="steptwo-td" width="200px">
+				<ul style="list-style-type:none">
+					<li>Includes 10 requests</li>
+				</ul>
+			</td>
+			<td class= "steptwo-td" width="200px">
+				<ul style="list-style-type:none">
+					<li>Includes 50 requests</li>
+				</uls>
+			</td>
+			<td class= "steptwo-td" align="left" width="200px">
+				<ul style="list-style-type:none">
+					<li>All access pass to all companies in the Braveheart catalogue</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	</div>
+	<div align="center">
+	<a class="btn btn-primary" href="{% url 'registration_app:steptwo' %}">Next</a>
+	</div>
+</div>
+
+{% endblock %}

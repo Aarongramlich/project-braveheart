@@ -1,0 +1,23 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item{
+	margin:.5em;
+}
+/*
+.form-row{
+	padding-top: 100px;
+}*/
+
+.contact-header{
+	text-align: right;
+}
+
+/*.request-form{
+	display: inline-block;
+	float:right;
+	clear:left;
+	width: 250px;
+	text-align: right;
+}*/

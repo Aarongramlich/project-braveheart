@@ -1,0 +1,29 @@
+{% extends 'registration_app/registration_app_base.html' %}
+
+{% block body_block %}
+<div class="jumbotron" style="background-color: #1E346E">
+	<div class="container-fluid" align="center">
+		<div class="row">
+			<div id="stepone-leftpanel" class="col" style="background: white;border-radius: 10px">
+				<div class="hero-panel">
+					<!-- <h1>"These scraps of data…each one harmless enough on its own…are carefully assembled, synthesized, traded, and sold."</h1>
+					<h2>-Tim Cook, CEO, Apple</h2> -->
+				</div>
+			</div>
+			<div class="col">
+			<form method="post">
+				{% csrf_token %}
+				<div align="right" style="color: white;">
+				{{ form.as_p }}	
+				<a class="btn btn-primary" href="{% url 'registration_app:steptwo' %}">Next</a>
+				</div>
+				<!-- <input type="submit" class="btn btn-primary" name="Submit" value="Next"> -->
+			
+			</form>
+		</div>
+			</div>
+			
+	</div>
+</div>
+
+{% endblock %}

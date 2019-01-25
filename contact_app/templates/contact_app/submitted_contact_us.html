@@ -1,0 +1,19 @@
+{% extends 'contact_app/contact_base.html' %}
+
+{% load staticfiles %}
+
+{% block body_block %}
+
+<div class="container py-5">
+	<div class="jumbotron" style="background-color: #1e346e;border-radius: 10px">
+	<div class="row py-5">
+		<div class="col-sm-12 text-center text-white">
+			<h1>Thanks for reaching out.</h1><br>
+			<h3>Our team will be in touch shortly!</h3><br>
+			<h5>Your request number is:<br>{{ MemberRequest.id }}</h5>
+		</div>
+	</div>
+	</div>
+</div>
+
+{% endblock %}
