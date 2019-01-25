@@ -1,0 +1,39 @@
+body{
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item{
+	margin:.5em;
+}
+
+.info-header{
+	padding-top: 100px;
+	padding-right:40px;
+	text-align: right;
+
+}
+
+.left-what-item{
+	padding-top: 60px;
+	padding-left: 50px;
+}
+
+.left-sub-item{
+	padding-top: 30px;
+	padding-left:50px;
+}
+
+.right-sub-item{
+	padding-top: 30px;
+	padding-left:400px;
+	text-align: right;
+	padding-right: 50px;
+}
+
+.right-what-item {
+	/*text-align: right;*/
+	padding-top: 60px;
+	padding-left: 100px;
+	padding-right: 50px;
+}

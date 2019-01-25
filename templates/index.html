@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+	<div class="jumbotron" id='home_banner' style="background-color:#1E346E;color:#ffffff;text-align:center;border-style:2px black;margin-right: 200px;margin-left: 200px;margin-top: 65px">
+		<h1><b>Right to privacy is back.</b></h1>
+		<h6><b>Project Braveheart is your partner in finding out what personal information companies are storing on you, who they sell it to, and even deleting your data from their database.</b></h6>
+		<div class="row">
+			<div class="col-sm">
+				<button type="button" class="btn btn-outline-light" style="float: right;width: 150px">Learn More</button>
+			</div>
+			<div class="col-sm">
+				<button type="button" class="btn btn-outline-light" style="float: left;width: 200px">Become a Member</button>
+			</div>
+		</div>
+	</div>
+	<div class="container border border-dark" align="center" style="width:80%;padding: 50px;border-color: black;border-width: 5px;background-color: white;border-radius: 10px">
+		<p style="color:#5D5D5D; font-size: 1.3em;" align="center"><b>We help you navigate the complex world of data privacy.</b></p>
+		
+		<div class="row">
+			<div class="col-sm home-exp" style="padding: 20px">
+				<img src="{% static 'registration_app/cloud-computing.svg' %}"  class="img-fluid" width="100" height="100" alt="">
+			</div>
+			<div class="col-sm home-exp" style="padding: 20px">
+				<img src="{% static 'registration_app/deal.svg' %}"  class="img-fluid" width="100" height="100" alt="">
+			</div>
+			<div class="col-sm home-exp" style="padding: 20px">
+				<img src="{% static 'registration_app/shield.svg' %}"  class="img-fluid" width="100" height="100" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm home-exp" style="padding: 5px;color:#5D5D5D"><b>KNOWLEDGE</b>
+			</div>
+			<div class="col-sm home-exp" style="padding: 5px;color:#5D5D5D"><b>CONTROL</b>
+				
+			</div>
+			<div class="col-sm home-exp" style="padding: 5px;color:#5D5D5D"><b>PRIVACY</b>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm home-exp" style="padding-top: 10px;font-size: .9em;color:#5D5D5D">
+				Find out which of your data companies have.
+			</div>
+			<div class="col-sm home-exp" style="padding-top: 10px;font-size: .9em;color:#5D5D5D">
+				Know which companies have bought and sold your data.
+			</div>
+			<div class="col-sm home-exp" style="padding-top: 10px;font-size: .9em;color:#5D5D5D">
+				Safeguard yourself from dangerous data breaches.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm" style="padding: 1px;font-size: .9em;">
+				<button type="button" class="btn btn-info">run analysis</button>
+			</div>
+			<div class="col-sm" style="padding: 1px;font-size: .9em;">
+				<button type="button" class="btn btn-info">explore companies</button>
+			</div>
+			<div class="col-sm" style="padding: 1px;font-size: .9em;">
+				<button type="button" class="btn btn-info">learn more</button>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends 'products_app/product_base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+
+<div class="container" >
+	<div class="jumbotron" style="background-color: #007dc1; margin-top: 50px;border-radius: 10px">
+		<div class="row">
+			<div class="col-sm-8">
+			<h1 style="color:#ffffff;font-size: 2.1em">We're here to help you do one thing. Get your privacy back.</h1>
+			</div>
+			<div class="col-sm-4"><a href="{% url 'info_app:what' %}">
+				<button type="submit" class="btn btn-outline-light" style="width: 175px;margin-left: 60px; ">
+					<b><span style="color: ffffff;">LEARN MORE</span></b>
+				</button></a>
+			</div>
+		</div>	
+	</div>
+	<div class="row mr-6">
+		<div class="text-center col-sm-5"></div>
+		<div class="text-center col-sm-2 border rounded m-2" style="color: #ffffff;background-color: #0493A3" align="center">
+			<div class="mr-2 pt-2" >
+			<h6><b><span style="font-size: .85em">STARTER PRIVACY PACK</span></b></h6>
+			</div>
+		</div>
+		<div class="text-center col-sm-2 border rounded m-2" style="color: #ffffff;background-color: #396598" align="center">
+				<div class="mr-2 pt-2">
+				<h6><b><span style="font-size: .85em">PREMIER PRIVACY PACK</span></b></h6></div></div>
+		<div class="text-center col-sm-2 border rounded m-2" style="color:#ffffff; background-color:#4340A1 " align="center">
+			<div class="mr-2 pt-2"><h6><b><span style="font-size: .85em">CUSTOM PRIVACY PACK</span></b></h6></div></div>
+	</div>
+	<div class="row mr-6 ">
+		<div style="text-align:right" class="col-sm-5 pt-4 mr-2 border-bottom">
+			<b>Individual business data requests included</b>
+		</div>
+		<div class="text-center col-sm-2 pt-4 mr-2 border-bottom">
+			<h3>10</h3>
+		</div>
+		<div class="text-center col-sm-2 pt-4 mr-2 border-bottom">
+			<h3>40</h3>
+		</div>
+		<div class="btn btn-sm btn-outline-primary col-sm-2 ml-3 p-2"><span style="font-size: .75em"><b>BEGIN CUSTOM PACK</b></span></div>
+	</div>
+	<div class="row mr-6 pt-4" >
+		<div style="text-align:right" class="col-sm-5 mr-2  border-bottom">
+			<b>Full data privacy service</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2  border-bottom">
+			<img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt="">
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2  border-bottom"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 ml-3"><p style="font-size: .8em"><b>$14.99/request<br>+Add-on Options</p></b></div>
+
+	</div>
+	<div class="row mr-6 pt-4">
+		<div style="text-align:right" class="col-sm-5 mr-2 border-bottom">
+			<b>Personalized dashboard</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom">
+			<img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt="">
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 py-4"></div>
+	</div>
+	<div class="row mr-6 pt-4">
+		<div style="text-align:right" class="col-sm-5 mr-2 border-bottom">
+			<b>Year-round Support</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom">
+			<img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt="">
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 py-4"></div>
+	</div>
+	<div class="row mr-6 pt-4">
+		<div style="text-align:right" class="col-sm-5 mr-2 border-bottom">
+			<b>Dedicated Success Manager</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom">
+			
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2  border-bottom"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 py-4"></div>
+	</div>
+	<div class="row mr-6 pt-4">
+		<div style="text-align:right" class="col-sm-5 mr-2 border-bottom">
+			<b>Proactive Monitoring</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2 border-bottom">
+			
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2  border-bottom"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 py-4"></div>
+	</div>
+	<div class="row mr-6 pt-4">
+		<div style="text-align:right" class="col-sm-5 mr-2">
+			<b>Expert final review consultation</b>
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2">
+			
+		</div>
+		<div class="text-center col-sm-2 pb-4 mr-2"><img src="{% static 'registration_app/checked.svg' %}"  class="img-fluid" width="25" height="25" alt=""></div>
+		<div class="text-center col-sm-2 py-4"></div>
+	</div>
+	<div class="row mr-6 pb-4">
+		<div class="col-sm-5">
+		</div>
+		<div class="btn btn-primary col-sm-2 py-2 mx-2"><span style="font-size: .75em"><b>BEGIN STARTER PACK</b></span></div>
+		<div class="btn btn-primary col-sm-2 py-2 mx-2"><span style="font-size: .75em"><b>BEGIN PREMIER PACK</b></span></div>
+		<!-- <div class="btn btn-primary col-sm-2 py-2 mr-2"><span style="font-size: .75em"><b> BEGIN CUSTOM PACK</b></span></div> -->
+	</div>
+	<div class="row pb-5">
+		<div class="col-sm-5">
+		</div>
+		<div class="text-center col-sm-2 ml-3"><p style="font-size: 1.2em"><b>$99</p></b></div>
+		<div class="text-center col-sm-2 ml-3"><p style="font-size: 1.2em"><b>$299</p></b></div>
+		<!-- <div class="btn btn-primary col-sm-2 py-2 mr-2"><span style="font-size: .75em"><b> BEGIN CUSTOM PACK</b></span></div> -->
+	</div>
+	<!-- <table class="table" > -->
+		<!-- <thead>
+			<tr>
+				<th></th>
+				<th class="mr-2" style="border-radius: 10px;background-color: #0493A3; text-align:auto;color: #ffffff">STARTER PRIVACY PACK</th>
+				<th class="mr-2" style="border-radius: 10px;background-color: #396598; text-align:auto;color: #ffffff">PREMIER PRIVACY PACK</th>
+				<th class="mr-2" style="border-radius: 10px;background-color: #4340A1; text-align:auto;color: #ffffff">CUSTOM PRIVACY PACK</th>
+			</tr>
+		</thead> -->
+		<!-- <tbody>
+			<tr>
+				<td style="text-align: right"><b>Individual business data request included</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: right"><b>Full data privacy service</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: right"><b>Personalized dashboard</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: right"><b>Year-round Support</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: right"><b>Personal case handler</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: right"><b>Expert final review consultation</b></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<button class="btn btn-primary" style=" align:auto;" type="submit"><b><span style="font-size: .75em;color:#ffffff;">BEGIN STARTER PACK</span></b></button>
+				</td>
+				<td><button class="btn btn-primary" style="align:auto;" type="submit"><b><span style="font-size: .75em;color:#ffffff;">BEGIN PREMIER PACK</span></b></button></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table> -->
+	<!-- <div class="row">
+		<div class="col-sm-3">
+			<div class="row" style="border-width: 2px;border-color: black">
+				<the
+				<p>Individual business data requests included</p>
+				<p>Full data privacy service</p>
+			</div>
+		</div>
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-3">
+		</div>
+	</div> -->
+</div>
+{% endblock %}

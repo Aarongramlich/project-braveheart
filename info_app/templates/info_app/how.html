@@ -1,0 +1,71 @@
+{% extends 'info_app/info_base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div class="container mt-4">
+	<div class="row m-4 py-5">
+		<div class="col-sm-6 info-header" style="padding-top: 40px;">
+			<h1>How does Project Braveheart help?</h1>
+			<h6><br>Braveheart is a premier service to help you take full advantage of the California Consumer Protection Act.</h6>
+			<p style="font-size: .85em;"><br>Watch the video on the right to learn more.</p>
+		</div>
+		<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1cnoM8EiGGU" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12"><h1 style="text-align: center;">HOW IT WORKS</h1></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Choose your package.</h3>
+			<p style="padding-top: 30px;">Choose one of our packages of services and any add-ons<br> to get started. Don't worry, you can always upgrade later.<br><br><a href="{% url 'products_app:packages' %}">View Products</a></p>
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'info_app/machine.svg' %}"  class="img-fluid" style="padding-top: 50px" width="250" height="250" alt="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4" align="center">
+			<img src="{% static 'info_app/call-center.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+		<div class="col-sm-8 right-what-item">
+			<h3>A personal data experts will be assigned to help you through the entire process.</h3>
+			<p style="padding-top: 30px;">This will be your partner through the process, who will be doing all the heavy lifting. They'll be following up with the companies you've requested data from on a daily basis.<br><br>We pride ourselves on keeping an open line of communication, so feel free to reach out to your expert at any time.</p>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Get your data back from the companies gathering it.</h3>
+			<p style="padding-top: 30px;">According to the CCPA, businesses must provide all applicable data within<br> 45 days of the original request. Once you receive your data from<br> each company, you'll get to choose what to do with it.<br><br><a href="#">Click here for an example of what you'll receive.</a></p>
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'info_app/big-data.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4" align="center">
+			<img src="{% static 'info_app/money-bag.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+		<div class="col-sm-8 right-what-item">
+			<h3>Find out which companies they've sold your data to.</h3>
+			<p style="padding-top: 30px;">After you receive your data from each company, they are required to tell you which companies they've shared or sold it to. Don't worry, we can help you get your data from those companies too.</p>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Have your data deleted, with guidance from your data expert.</h3>
+			<p style="padding-top: 30px;">Once you know what information a company is storing on you, you'll be<br> able to make the judgement call on if you want them to delete your<br> data, or not. Your data expert will provide advice, and help you through<br> the process.</p>
+		</div>
+		<div class="col-sm-4 pb-5">
+			<img src="{% static 'info_app/file.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+

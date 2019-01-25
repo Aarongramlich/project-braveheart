@@ -42,6 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home_app',
     'registration_app',
+    'products_app',
+    'info_app',
+    'contact_app',
+    'member_app',
+    'crispy_forms',
+    'phone_field',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +127,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STATIC_URL = '/static/'
 

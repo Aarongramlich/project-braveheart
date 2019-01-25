@@ -1,0 +1,49 @@
+{% extends 'contact_app/contact_base.html' %}
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+
+
+
+{% block body_block %}
+
+<div class="container">
+	<div class="jumbotron mt-5" style="border-radius: 10px;background-color: #1e346e">
+	<div class="row m-4">
+			<!-- <div class="col-sm-12 text-center text-white">
+				<h1><strong>Our team is here to help!</strong><h6>And if you'd rather talk live to one of our experts, call us at:</h6></h1>
+
+			</div> -->
+		
+			<div class="col-sm-8 text-white">
+			<h1 style="font-size: 2.1em"><strong>Our team is here to help.</strong><h6>Become a member to take advantage of premium support!</h6></h1>
+			</div>
+			<div class="col-sm-4"><a href="{% url 'info_app:what' %}">
+				<button type="submit" class="btn btn-outline-light mt-3" style="width: 200px;margin-left: 60px; ">
+					<b><span style="color: ffffff;">BECOME A MEMBER</span></b>
+				</button></a>
+			</div>
+	</div>
+</div>
+<div class="row">
+
+	<div class="col-sm-6 form-row">
+		<h3 class="text-body pt-5 mt-5" style="padding-left: 120px;">Send us a message and our team will reach out to help.<span><h5><br>Or if you'd rather talk to one of our experts, call us at:<br>1-800-714-7128</h5></span></h3>
+		<!-- <h3 style="padding-left: 120px" class="text-">or call us at:<br>
+		1-800-714-7128</h3>
+ -->	</div>
+	<div class="col-sm-6 request-form">
+		<div class="mt-5 pl-5 text-secondary" align="left" style="width: 450px">
+			<form method="POST">
+			{% csrf_token %}	
+			{{ form | crispy }}
+			<!-- {{form.as_p}} -->
+			<button class="btn btn-primary mb-4" style="float: right;width: 400px " type="submit" href="{% url 'contact_app:submitted' %}">Submit</button>
+			</form>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'info_app/info_base.html' %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div class="container mt-4">
+	<div class="row m-4 py-5">
+		<div class="col-sm-6 info-header" style="padding-top: 40px;">
+			<h1>What is Project Braveheart?</h1>
+			<h6><br>Braveheart is a premier service to help you take full advantage of the California Consumer Protection Act.</h6>
+			<p style="font-size: .85em;"><br>Watch the video on the right to learn more.</p>
+		</div>
+		<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1cnoM8EiGGU" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12"><h1 style="text-align: center;">WHAT WE DELIVER</h1></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Find out what companies know about you.</h3>
+			<p style="padding-top: 30px;">Companies store a lot of data on you and your family.<br>We'll find out what categories of data they are storing on you.</p>
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'info_app/analytics.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4" align="center">
+			<img src="{% static 'info_app/strategy.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+		<div class="col-sm-8 right-what-item">
+			<h3>Find out what these companies are doing with your data, and what exactly they're using it for.</h3>
+			<p style="padding-top: 30px;">Whether it's for marketing or sales purposes, companies are analyzing your data to predict your actions and know your habits. We help you find out what these companies are doing with your data so you can gain the knowledge you deserve.</p>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Find out who your data is being sold to.</h3>
+			<p style="padding-top: 30px;">Companies are constantly buying, selling, and sharing your data with other companies. We'll find out who they've sold your data to, so that we can get<br> your data back from them as well.</p>
+		</div>
+		<div class="col-sm-4">
+			<img src="{% static 'info_app/transaction.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4" align="center">
+			<img src="{% static 'info_app/servers.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+		<div class="col-sm-8 right-what-item">
+			<h3>Delete your data from their databases, if you want.</h3>
+			<p style="padding-top: 30px;">Once you've found out what data these companies have, we'll help you wipe it clean from their databases, if you want.</p>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-sm-8 left-what-item">
+			<h3>Automatically opt-out of sharing your data.</h3>
+			<p style="padding-top: 30px;">Opting out of any future using and sharing of your data is the best way to<br> ensure privacy. We automatically request each of these companies opt you<br> out of any future usage and sharing of data.</p>
+		</div>
+		<div class="col-sm-4 pb-5">
+			<img src="{% static 'info_app/puzzle.svg' %}"  class="img-fluid" style="padding-top: 60px" width="250" height="250" alt="">
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
