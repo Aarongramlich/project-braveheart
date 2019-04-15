@@ -1,1 +1,1 @@
-web: gunicorn project-braveheart.wsgi --log-file -
+web: gunicorn project-braveheart.wsgi
