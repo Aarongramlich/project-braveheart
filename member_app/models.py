@@ -1,5 +1,5 @@
 from django.db import models
-from phone_field import PhoneField
+# from phone_field import PhoneField
 from datetime import date
 from products_app.models import ProductPackage
 
@@ -16,7 +16,7 @@ class Member(models.Model):
 	first_name = models.CharField(max_length=256)
 	last_name = models.CharField(max_length=256)
 	email = models.EmailField(max_length=256,unique=True)
-	phone = PhoneField(blank=True,E164_only=False)
+	# phone = PhoneField(blank=True,E164_only=False)
 	communication_preference = models.CharField(max_length=256,choices=communication_preference_options)
 	opt_out = models.BooleanField(blank=True)
 	hard_bounce = models.BooleanField(blank=True)

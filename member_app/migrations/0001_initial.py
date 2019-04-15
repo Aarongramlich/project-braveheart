@@ -2,7 +2,6 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import phone_field.models
 
 
 class Migration(migrations.Migration):
@@ -21,7 +20,6 @@ class Migration(migrations.Migration):
                 ('first_name', models.CharField(max_length=256)),
                 ('last_name', models.CharField(max_length=256)),
                 ('email', models.EmailField(max_length=256, unique=True)),
-                ('phone', phone_field.models.PhoneField(blank=True, max_length=31)),
                 ('communication_preference', models.CharField(choices=[('email', 'Email'), ('phone', 'Phone'), ('text', 'Text')], max_length=256)),
                 ('opt_out', models.BooleanField(blank=True)),
                 ('hard_bounce', models.BooleanField(blank=True)),
