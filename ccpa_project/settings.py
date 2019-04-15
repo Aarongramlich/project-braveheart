@@ -132,3 +132,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
